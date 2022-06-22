@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;project {file:/home/anatoly/projects/scala/Scalagram/}root; reboot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(project {file:/home/anatoly/projects/scala/Scalagram/}root, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to Scalagram (in build file:/home/anatoly/projects/scala/Scalagram/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reboot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtRebootNetwork, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtRebootImpl, None, None)[0m

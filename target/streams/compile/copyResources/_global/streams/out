@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/anatoly/projects/scala/Scalagram/src/main/resources/logback.xml,/home/anatoly/projects/scala/Scalagram/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/anatoly/projects/scala/Scalagram/src/main/resources/application.conf,/home/anatoly/projects/scala/Scalagram/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/anatoly/projects/scala/Scalagram/src/main/resources/banner.txt,/home/anatoly/projects/scala/Scalagram/target/scala-2.13/classes/banner.txt)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/anatoly/projects/scala/Scalagram/src/main/resources/db.migration/V1__InitialDatabaseSetup.sql,/home/anatoly/projects/scala/Scalagram/target/scala-2.13/classes/db.migration/V1__InitialDatabaseSetup.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/anatoly/projects/scala/Scalagram/src/main/resources/db.migration/V2__Notes.sql,/home/anatoly/projects/scala/Scalagram/target/scala-2.13/classes/db.migration/V2__Notes.sql)[0m

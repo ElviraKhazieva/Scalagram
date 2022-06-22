@@ -1,0 +1,126 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (Amazon.com Inc. Java 1.8.0_322)
+[debug]       Load.loadUnit: plugins took 48.945161ms
+[debug]       Load.loadUnit: defsScala took 0.221502ms
+[debug] [Loading] Scanning directory /home/anatoly/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/anatoly/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 12.091665 ms
+[debug]           Load.resolveProject(global-plugins) took 96.083602ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/anatoly/.sbt/1.0/plugins, plugins: List(<none>))) took 125.185468ms
+[debug] [Loading] Done in /home/anatoly/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 140.751324ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.22514ms
+[debug]     Load.loadUnit(file:/home/anatoly/.sbt/1.0/plugins/, ...) took 195.69003ms
+[debug]   Load.apply: load took 316.62183ms
+[debug]   Load.apply: resolveProjects took 5.717743ms
+[debug]   Load.apply: finalTransforms took 51.655721ms
+[debug]   Load.apply: config.delegates took 6.93803ms
+[debug]   Load.apply: Def.make(settings)... took 249.65266ms
+[debug]   Load.apply: structureIndex took 61.189968ms
+[debug]   Load.apply: mkStreams took 1.041255ms
+[info] loading global plugins from /home/anatoly/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1568.810979ms
+[debug]           Load.loadUnit: plugins took 19.318954ms
+[debug]           Load.loadUnit: defsScala took 0.005301ms
+[debug] [Loading] Scanning directory /home/anatoly/projects/scala/Scalagram/project
+[debug]             Load.loadUnit: mkEval took 8.874996ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/anatoly/projects/scala/Scalagram/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.52171 ms
+[info] loading settings for project scalagram-build from plugins.sbt ...
+[debug]               Load.resolveProject(scalagram-build) took 1.992264ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id scalagram-build, base: /home/anatoly/projects/scala/Scalagram/project, plugins: List(<none>))) took 3.997756ms
+[debug] [Loading] Done in /home/anatoly/projects/scala/Scalagram/project, returning: (scalagram-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 101.788693ms
+[debug]           Load.loadUnit: cleanEvalClasses took 2.213445ms
+[debug]         Load.loadUnit(file:/home/anatoly/projects/scala/Scalagram/project/, ...) took 124.038594ms
+[debug]       Load.apply: load took 124.909418ms
+[debug]       Load.apply: resolveProjects took 0.106833ms
+[debug]       Load.apply: finalTransforms took 6.259587ms
+[debug]       Load.apply: config.delegates took 0.377691ms
+[debug]       Load.apply: Def.make(settings)... took 59.685017ms
+[debug]       Load.apply: structureIndex took 14.989732ms
+[debug]       Load.apply: mkStreams took 0.002836ms
+[info] loading project definition from /home/anatoly/projects/scala/Scalagram/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 355.730969ms
+[debug]     Load.loadUnit: defsScala took 0.002817ms
+[debug] [Loading] Scanning directory /home/anatoly/projects/scala/Scalagram
+[debug]       Load.loadUnit: mkEval took 0.155178ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.scalafmt.sbt.ScalafmtPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.scalafmt.sbt.ScalafmtPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,org.scalafmt.sbt.ScalafmtPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.283518 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 3.753925ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/anatoly/projects/scala/Scalagram, plugins: List(<none>))) took 5.75421ms
+[debug] [Loading] Done in /home/anatoly/projects/scala/Scalagram, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1837.571493ms
+[debug]     Load.loadUnit: cleanEvalClasses took 2.003713ms
+[debug]   Load.loadUnit(file:/home/anatoly/projects/scala/Scalagram/, ...) took 2195.744869ms
+[debug] Load.apply: load took 2196.748872ms
+[debug] Load.apply: resolveProjects took 0.081797ms
+[debug] Load.apply: finalTransforms took 4.795898ms
+[debug] Load.apply: config.delegates took 0.227133ms
+[debug] Load.apply: Def.make(settings)... took 45.910206ms
+[debug] Load.apply: structureIndex took 21.494194ms
+[debug] Load.apply: mkStreams took 0.003017ms
+[info] set current project to Scalagram (in build file:/home/anatoly/projects/scala/Scalagram/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/anatoly/.sbt/1.0/server/9680d32ad8edf9e12c13/sock
+[debug] Writing bsp connection file
+[info] started sbt server

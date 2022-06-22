@@ -1,0 +1,91 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t scalagram:0.0.1 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /home/anatoly/projects/scala/Scalagram/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  66.85MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/20 : FROM openjdk as stage0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b83a192caadf[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/20 : LABEL snp-multi-stage="intermediate"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 31ac34e7e087[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 31ac34e7e087[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> caa14bf499a6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/20 : LABEL snp-multi-stage-id="2f0d0770-9bbb-401e-bfd3-636399c1fe6a"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in a7f1dfd7e25f[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container a7f1dfd7e25f[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 689ddc904922[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/20 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 36bad3db4626[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 36bad3db4626[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 79927a22de6f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/20 : COPY 2/opt /2/opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 1424c38e5bc6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/20 : COPY 4/opt /4/opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 8f1fd7ff2108[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/20 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in dc5ce27f504c[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container dc5ce27f504c[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 0aacac954bc4[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/20 : RUN ["chmod", "-R", "u=rX,g=rX", "/2/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in e4d058e344a9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container e4d058e344a9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 43a66767cb59[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/20 : RUN ["chmod", "-R", "u=rX,g=rX", "/4/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 24cf922fc820[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 24cf922fc820[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 77ee089f6a53[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/20 : RUN ["chmod", "u+x,g+x", "/4/opt/docker/bin/scalagram"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 893553ab481b[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 893553ab481b[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a983536f74f5[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/20 : FROM openjdk as mainstage[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b83a192caadf[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 12/20 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b2e75eafad77[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 13/20 : RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c9b735e63f07[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 14/20 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 63a9c2c3852b[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 15/20 : COPY --from=stage0 --chown=demiourgos728:root /2/opt/docker /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 6039bdb3e37e[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 16/20 : COPY --from=stage0 --chown=demiourgos728:root /4/opt/docker /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> bcf1b62119d1[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 17/20 : EXPOSE 8080[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in e8339ac7b6b8[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container e8339ac7b6b8[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e7beba000e72[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 18/20 : USER 1001:0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in f764fcfba9b0[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container f764fcfba9b0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 405b1c93f08d[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 19/20 : ENTRYPOINT ["/opt/docker/bin/scalagram"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 91c1ccb963dd[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 91c1ccb963dd[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 602df28b242a[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 20/20 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in b772df9032a6[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container b772df9032a6[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a12234243df5[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built a12234243df5[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged scalagram:0.0.1[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate image(s) (labeled "snp-multi-stage-id=2f0d0770-9bbb-401e-bfd3-636399c1fe6a") [0m
+[0m[[0m[0minfo[0m] [0m[0mDeleted Images:[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:a983536f74f50a2757fc4f80a29ef01e07820092403bfabf8b06e0a2fd8c29e9[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:1631f5b828308ba3cbc3b29c4d13165dc5cb5b210b3020583620befce3619494[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:77ee089f6a53647178eebdbd57eca05bfa5f687db2010d73165a867fc688a870[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:4429b10786d45fad576d9afa1dba17647d1ff18cc8f22abcce315e3805cb2d59[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:43a66767cb5905ef147d036ea42bd12e5191c0838ee4e4f11370dd519df1b910[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:96d30c11d509f601964ae30efd5766550668c79e445b1ec1ec6dbe9321ea6c1f[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:0aacac954bc49117a6535cffdb1ec863714188269f68ae7eac475ba1e5cf5267[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:8f1fd7ff2108f9e38f9a982fe0174c898ea4f333804295ec5ca679662921eebd[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:98c211d8a14851c50d80a78cadf3a7768c14130db55bd3191ce4f9987b2e5754[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:1424c38e5bc62b5bfbfbe7239d69694792730f65860404995fd667138dde1f97[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:6e131aba576f2311542f8282a03effbbe0456a69f8fa05118f08c34787ee05ee[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:79927a22de6f47badf51489b3a7a5a3d3d9df670315e34e7c3da8797e39a9123[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:073f156595a5942700b43a6bf745eae6f8e6ff6d3c6f6ca71dbea41f10bf14b9[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:689ddc904922307a1fea296457dad173d3846aa8dea50e61fd9fc58481161761[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:caa14bf499a633f21051a1474f9b3d55b42fe789fcf01cd1e62a577c6b141bab[0m
+[0m[[0m[0minfo[0m] [0m[0mTotal reclaimed space: 133.6MB[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image scalagram with tags [0.0.1][0m
